@@ -4,10 +4,31 @@
     <meta name="author" content="Anna Sommer & Daniel Pietschke">
     <meta name="description" content="just a simple training page for XPLab">
     <link rel="stylesheet" href="homework.css">
-    <script src="homework.js"></script>
     <title>Home</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="header">
+      <a href="homework.html" class="logo">
+        <img src="DeathlyHallows.png" alt="Deathly Hallows"width="50" height="50">
+      </a>
+      <div class="header-right">
+        <a class="active" href="homework.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <h1>Welcome to Hogwarts School of Witchcraft and Wizardry</h1>
+    <script src="homework.js" async></script>
+
+    <img src="Hogwarts.png" alt="Hogwarts Coat of Arm" width="250" height="350">
+
+    <div class="pinboard">
+      <h2>Pinboard</h2>
+      <p id="comment"></p>
+      <label for="commentText">Type in content: </label><br>
+      <textarea name="name" rows="8" cols="80" id="commentText" ></textarea><br>
+      <button onclick="commentFunction()">Send</button>
+    </div>
   </body>
 </html>
